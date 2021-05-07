@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Election Polls</title>
+	<link rel="stylesheet" href="/static/election-page.css">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<img alt="Logo" src="/static/download.svg" height="100%">
+		</div>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Enroll To Vote </a></li>
+			<li><a href="#">Cast Vote </a></li>
+			<li><a href="#">About Us</a></li>
+		</ul>
+
+	</header>
+	<main>
+		<h1>Electorate Vote</h1>
+		<div id="electorate-container">
+			{% for candidate in candidates_list %}
+			<label for="party">{{candidate.title()}}</label>
+			<input type="radio" id="party-button" name="party" value="Placeholder"> <br>
+			{%endfor%}
+		</div>
+		<h1>Party vote</h1>
+		<div id="party-container">
+			<label for="electorate">PlaceHolder electorate</label>
+			<input type="radio" id="electorate-button" name="electorate" value="Placeholder"><br>
+			<label for="electorate">PlaceHolder electoratse</label>
+			<input type="radio" id="electorate-button" name="electorate" value="Placeholder"><br>
+			<label for="electorate">PlaceHolder electorate</label>
+			<input type="radio" id="electorate-button" name="electorate" value="Placeholder"><br>
+			<label for="electorate">PlaceHolder electorate</label>
+			<input type="radio" id="electorate-button" name="electorate" value="Placeholder"><br>
+			<label for="electorate">PlaceHolder electorate</label>
+			<input type="radio" id="electorate-button" name="electorate" value="Placeholder"><br>
+			<label for="electorate">PlaceHolder electorate</label>
+			<input type="radio" id="electorate-button" name="electorate" value="Placeholder"><br>
+		 </div>
+		 <div id="button-container">
+		 	<button name="submit">Cast Vote</button>
+		</div>
+	</main>
+	<footer>
+</body>
+</html>
