@@ -62,10 +62,19 @@ h1 {
 }
 
 
+#electorte-field {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+}
+
+
 
 input, label {
 	margin: 1rem 3rem 0.5rem 0;
 }
+
+
 
 button {
 	margin: 2rem 0 2rem 0;

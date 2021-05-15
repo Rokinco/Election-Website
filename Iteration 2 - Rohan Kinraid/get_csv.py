@@ -7,13 +7,13 @@ class get_candidates:
 
     def __init__(self, url):
         self.url = url
-        
-    
+
+
     #Get electorate csv from link and download as csv file into dir
     def get_csv(link):
         r = requests.get(link, allow_redirects=True)
         open("csv_test4.csv", 'wb').write(r.content)
-    
+
 
     #read csv file and return candidate object as a list
     def generate_candidates():
@@ -29,5 +29,5 @@ class get_candidates:
                 break
         return candidate_list
 
-
-print(get_candidates.generate_candidates())
+##if __name__ == '__main__':
+    ##print(get_candidates.generate_candidates())
